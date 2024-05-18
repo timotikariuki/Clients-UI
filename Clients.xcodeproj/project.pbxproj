@@ -14,6 +14,7 @@
 		F8C44EAA2BF6F8D000A1648A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C44EA92BF6F8D000A1648A /* Assets.xcassets */; };
 		F8C44EAD2BF6F8D000A1648A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C44EAB2BF6F8D000A1648A /* LaunchScreen.storyboard */; };
 		F8C44EB02BF6F8D000A1648A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C44EAF2BF6F8D000A1648A /* main.m */; };
+		F8CCEC512BF78A7B00CD35A7 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CCEC502BF78A7B00CD35A7 /* CustomButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		F8C44EAC2BF6F8D000A1648A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8C44EAE2BF6F8D000A1648A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8C44EAF2BF6F8D000A1648A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8CCEC4F2BF78A7B00CD35A7 /* CustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
+		F8CCEC502BF78A7B00CD35A7 /* CustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		F8C44E9C2BF6F88B00A1648A /* Clients */ = {
 			isa = PBXGroup;
 			children = (
+				F8CCEC4E2BF78A3C00CD35A7 /* components */,
 				F8C44E9D2BF6F88B00A1648A /* AppDelegate.h */,
 				F8C44E9E2BF6F88C00A1648A /* AppDelegate.m */,
 				F8C44EA02BF6F88C00A1648A /* SceneDelegate.h */,
@@ -74,6 +78,15 @@
 				F8C44EAF2BF6F8D000A1648A /* main.m */,
 			);
 			path = Clients;
+			sourceTree = "<group>";
+		};
+		F8CCEC4E2BF78A3C00CD35A7 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				F8CCEC4F2BF78A7B00CD35A7 /* CustomButton.h */,
+				F8CCEC502BF78A7B00CD35A7 /* CustomButton.m */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8C44EA52BF6F88C00A1648A /* ViewController.m in Sources */,
+				F8CCEC512BF78A7B00CD35A7 /* CustomButton.m in Sources */,
 				F8C44E9F2BF6F88C00A1648A /* AppDelegate.m in Sources */,
 				F8C44EB02BF6F8D000A1648A /* main.m in Sources */,
 				F8C44EA22BF6F88C00A1648A /* SceneDelegate.m in Sources */,
