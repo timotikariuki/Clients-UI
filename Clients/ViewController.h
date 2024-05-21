@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *imgAvatar;
+@property (weak, nonatomic) IBOutlet UILabel *lblName;
+
 @property (weak, nonatomic) IBOutlet CustomButton *btnDetails;
 @property (weak, nonatomic) IBOutlet CustomButton *btnAppointments;
 @property (weak, nonatomic) IBOutlet CustomButton *btnFinancials;
@@ -18,6 +21,16 @@
 @property (weak, nonatomic) IBOutlet CustomButton *btnNotes;
 @property (weak, nonatomic) IBOutlet CustomButton *btnDocuments;
 @property (weak, nonatomic) IBOutlet CustomButton *btnCommunication;
+
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+
+@property (nonatomic, strong) UIViewController* subVC;
+
+
+- (IBAction)onPhone:(id)sender;
+- (IBAction)onSms:(id)sender;
+- (IBAction)onMail:(id)sender;
+
 
 - (IBAction)onDetails:(id)sender;
 - (IBAction)onAppointment:(id)sender;

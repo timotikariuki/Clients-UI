@@ -6,7 +6,8 @@
 //
 
 #import "ViewController.h"
-
+#import "DetailsViewController.h"
+#import "DocumentsViewController.h"
 
 @interface ViewController ()
 
@@ -18,10 +19,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.imgAvatar.layer.cornerRadius = 85.0f;
    
-    [self resetAllButtons];
-    [self.btnDetails setSelected:YES];
-    
+    [self onDetails:self];
 }
 
 - (void)resetAllButtons {
@@ -33,11 +33,36 @@
     [self.btnNotes setSelected:NO];
     [self.btnDocuments setSelected:NO];
     [self.btnCommunication setSelected:NO];
+    
+    if (self.subVC) {
+        [self.subVC.view removeFromSuperview];
+        [self.subVC removeFromParentViewController];
+    }
 }
+
+
+
+- (IBAction)onMail:(id)sender {
+}
+
+- (IBAction)onSms:(id)sender {
+}
+
+- (IBAction)onPhone:(id)sender {
+}
+
+#pragma mark - menu buttons
 
 - (IBAction)onDetails:(id)sender {
     [self resetAllButtons];
     [self.btnDetails setSelected:YES];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.subVC = [storyboard instantiateViewControllerWithIdentifier:@"DetailsViewController"];
+    [self addChildViewController:self.subVC];
+    
+    [self.subVC.view setFrame:self.containerView.bounds];
+    [self.containerView addSubview:self.subVC.view];
 }
 
 - (IBAction)onAppointment:(id)sender{
@@ -53,6 +78,12 @@
 - (IBAction)onEMR:(id)sender {
     [self resetAllButtons];
     [self.btnEMR setSelected:YES];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.subVC = [storyboard instantiateViewControllerWithIdentifier:@"EMRViewController"];
+    [self addChildViewController:self.subVC];
+    [self.subVC.view setFrame:self.containerView.bounds];
+    [self.containerView addSubview:self.subVC.view];
 }
 
 - (IBAction)onPhotos:(id)sender {
@@ -68,6 +99,12 @@
 - (IBAction)onDocuments:(id)sender {
     [self resetAllButtons];
     [self.btnDocuments setSelected:YES];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.subVC = [storyboard instantiateViewControllerWithIdentifier:@"DocumentsViewController"];
+    [self addChildViewController:self.subVC];
+    [self.subVC.view setFrame:self.containerView.bounds];
+    [self.containerView addSubview:self.subVC.view];
 }
 
 - (IBAction)onCommunication:(id)sender {
