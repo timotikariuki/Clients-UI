@@ -110,6 +110,13 @@
 - (IBAction)onCommunication:(id)sender {
     [self resetAllButtons];
     [self.btnCommunication setSelected:YES];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.subVC = [storyboard instantiateViewControllerWithIdentifier:@"CommunicationViewController"];
+    [self addChildViewController:self.subVC];
+    
+    [self.subVC.view setFrame:self.containerView.bounds];
+    [self.containerView addSubview:self.subVC.view];
 }
 
 

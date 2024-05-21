@@ -11,6 +11,9 @@
 		F88AC59F2BFC3E9F00B24B09 /* EMRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88AC59E2BFC3E9E00B24B09 /* EMRViewController.m */; };
 		F88AC5A22BFC3F5000B24B09 /* EMRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F88AC5A12BFC3F5000B24B09 /* EMRItem.m */; };
 		F88F88162BFCC51C004D3149 /* PaddingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F88152BFCC51C004D3149 /* PaddingLabel.m */; };
+		F88F88192BFCDFC5004D3149 /* CommunicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F88182BFCDFC5004D3149 /* CommunicationViewController.m */; };
+		F88F881C2BFCE0BD004D3149 /* CommunicationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F881B2BFCE0BD004D3149 /* CommunicationTableViewCell.m */; };
+		F88F881F2BFCE153004D3149 /* Communication.m in Sources */ = {isa = PBXBuildFile; fileRef = F88F881E2BFCE153004D3149 /* Communication.m */; };
 		F89D351C2BF8A0F200600330 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F89D351B2BF8A0F100600330 /* DetailsViewController.m */; };
 		F89D35202BF8A21600600330 /* DetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F89D351F2BF8A21600600330 /* DetailsTableViewCell.m */; };
 		F89D35232BF8AA2B00600330 /* DocumentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F89D35222BF8AA2B00600330 /* DocumentsViewController.m */; };
@@ -35,6 +38,12 @@
 		F88AC5A12BFC3F5000B24B09 /* EMRItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMRItem.m; sourceTree = "<group>"; };
 		F88F88142BFCC51C004D3149 /* PaddingLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaddingLabel.h; sourceTree = "<group>"; };
 		F88F88152BFCC51C004D3149 /* PaddingLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaddingLabel.m; sourceTree = "<group>"; };
+		F88F88172BFCDFC4004D3149 /* CommunicationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommunicationViewController.h; sourceTree = "<group>"; };
+		F88F88182BFCDFC5004D3149 /* CommunicationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommunicationViewController.m; sourceTree = "<group>"; };
+		F88F881A2BFCE0BD004D3149 /* CommunicationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommunicationTableViewCell.h; sourceTree = "<group>"; };
+		F88F881B2BFCE0BD004D3149 /* CommunicationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommunicationTableViewCell.m; sourceTree = "<group>"; };
+		F88F881D2BFCE153004D3149 /* Communication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Communication.h; sourceTree = "<group>"; };
+		F88F881E2BFCE153004D3149 /* Communication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Communication.m; sourceTree = "<group>"; };
 		F89D351A2BF8A0F100600330 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
 		F89D351B2BF8A0F100600330 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		F89D351E2BF8A21600600330 /* DetailsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsTableViewCell.h; sourceTree = "<group>"; };
@@ -81,6 +90,8 @@
 				F89D35222BF8AA2B00600330 /* DocumentsViewController.m */,
 				F88AC59D2BFC3E9E00B24B09 /* EMRViewController.h */,
 				F88AC59E2BFC3E9E00B24B09 /* EMRViewController.m */,
+				F88F88172BFCDFC4004D3149 /* CommunicationViewController.h */,
+				F88F88182BFCDFC5004D3149 /* CommunicationViewController.m */,
 			);
 			path = subviews;
 			sourceTree = "<group>";
@@ -94,6 +105,8 @@
 				F89D35292BF8AD5D00600330 /* DocumentTableViewCell.m */,
 				F88AC59A2BFC369B00B24B09 /* EMRTableViewCell.h */,
 				F88AC59B2BFC369B00B24B09 /* EMRTableViewCell.m */,
+				F88F881A2BFCE0BD004D3149 /* CommunicationTableViewCell.h */,
+				F88F881B2BFCE0BD004D3149 /* CommunicationTableViewCell.m */,
 			);
 			path = tableCells;
 			sourceTree = "<group>";
@@ -105,6 +118,8 @@
 				F89D35262BF8ABD400600330 /* Document.m */,
 				F88AC5A02BFC3F5000B24B09 /* EMRItem.h */,
 				F88AC5A12BFC3F5000B24B09 /* EMRItem.m */,
+				F88F881D2BFCE153004D3149 /* Communication.h */,
+				F88F881E2BFCE153004D3149 /* Communication.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -228,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88F881C2BFCE0BD004D3149 /* CommunicationTableViewCell.m in Sources */,
 				F89D352A2BF8AD5D00600330 /* DocumentTableViewCell.m in Sources */,
 				F88AC5A22BFC3F5000B24B09 /* EMRItem.m in Sources */,
 				F89D35272BF8ABD400600330 /* Document.m in Sources */,
@@ -240,8 +256,10 @@
 				F89D35232BF8AA2B00600330 /* DocumentsViewController.m in Sources */,
 				F88F88162BFCC51C004D3149 /* PaddingLabel.m in Sources */,
 				F88AC59F2BFC3E9F00B24B09 /* EMRViewController.m in Sources */,
+				F88F88192BFCDFC5004D3149 /* CommunicationViewController.m in Sources */,
 				F8C44EB02BF6F8D000A1648A /* main.m in Sources */,
 				F8C44EA22BF6F88C00A1648A /* SceneDelegate.m in Sources */,
+				F88F881F2BFCE153004D3149 /* Communication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

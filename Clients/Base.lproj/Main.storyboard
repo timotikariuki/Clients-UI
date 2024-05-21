@@ -551,10 +551,117 @@
             </objects>
             <point key="canvasLocation" x="2169.7265625" y="-35.13909224011713"/>
         </scene>
+        <!--Communication View Controller-->
+        <scene sceneID="yuH-we-xcl">
+            <objects>
+                <viewController storyboardIdentifier="CommunicationViewController" id="I7F-QH-kaC" customClass="CommunicationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bkP-Qd-AqW">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WMM-3m-5eU">
+                                <rect key="frame" x="0.0" y="24" width="1024" height="1322"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CommunicationTableViewCellIdentifier" rowHeight="120" id="2Dd-4R-AQe" customClass="CommunicationTableViewCell">
+                                        <rect key="frame" x="0.0" y="50" width="1024" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Dd-4R-AQe" id="2FW-Zs-CER">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="communication_mail" translatesAutoresizingMaskIntoConstraints="NO" id="QXv-1B-Opc">
+                                                    <rect key="frame" x="24" y="12" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="QXv-1B-Opc" secondAttribute="height" id="7rx-hp-74n"/>
+                                                        <constraint firstAttribute="height" constant="25" id="WO3-fr-ghQ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Feedback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGO-gZ-DHU">
+                                                    <rect key="frame" x="61" y="16" width="931" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                    <color key="textColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Friday at 2:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amh-Wh-0Li">
+                                                    <rect key="frame" x="61" y="39" width="130.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                    <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="·  From: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v46-j2-HRS">
+                                                    <rect key="frame" x="199.5" y="39" width="47" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                    <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vedran Taneski" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKF-i7-o3e">
+                                                    <rect key="frame" x="254.5" y="39" width="88.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                    <color key="textColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj4-n9-EMv">
+                                                    <rect key="frame" x="61" y="65.5" width="931" height="29"/>
+                                                    <string key="text">Dear Mr. Ballardin, You are attending London and I think it is a great opportunity to see your therapist and hear some feedback on your recent pains. Please let me know and I will schedule an appointment for you and Dr. Kovalsky. I hope you will get better an...</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="jj4-n9-EMv" secondAttribute="bottom" constant="8" id="2y7-nN-yC5"/>
+                                                <constraint firstItem="hKF-i7-o3e" firstAttribute="centerY" secondItem="v46-j2-HRS" secondAttribute="centerY" id="3a6-ea-qzP"/>
+                                                <constraint firstItem="zGO-gZ-DHU" firstAttribute="centerY" secondItem="QXv-1B-Opc" secondAttribute="centerY" id="DyT-by-ddy"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="jj4-n9-EMv" secondAttribute="trailing" constant="16" id="SIW-LR-hva"/>
+                                                <constraint firstItem="jj4-n9-EMv" firstAttribute="top" secondItem="Amh-Wh-0Li" secondAttribute="bottom" constant="12" id="T7R-tZ-QvH"/>
+                                                <constraint firstItem="v46-j2-HRS" firstAttribute="leading" secondItem="Amh-Wh-0Li" secondAttribute="trailing" constant="8" id="VJJ-lQ-SId"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hKF-i7-o3e" secondAttribute="trailing" id="ZCN-nf-0fB"/>
+                                                <constraint firstItem="jj4-n9-EMv" firstAttribute="leading" secondItem="QXv-1B-Opc" secondAttribute="trailing" constant="12" id="ZYX-1k-OQb"/>
+                                                <constraint firstItem="Amh-Wh-0Li" firstAttribute="leading" secondItem="QXv-1B-Opc" secondAttribute="trailing" constant="12" id="bkb-Ov-MH4"/>
+                                                <constraint firstItem="hKF-i7-o3e" firstAttribute="leading" secondItem="v46-j2-HRS" secondAttribute="trailing" constant="8" id="c43-Vf-pbx"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="zGO-gZ-DHU" secondAttribute="trailing" constant="16" id="fhH-fO-12s"/>
+                                                <constraint firstItem="zGO-gZ-DHU" firstAttribute="leading" secondItem="QXv-1B-Opc" secondAttribute="trailing" constant="12" id="jmG-4d-VYD"/>
+                                                <constraint firstItem="QXv-1B-Opc" firstAttribute="leading" secondItem="2FW-Zs-CER" secondAttribute="leading" constant="24" id="nFq-2r-PlC"/>
+                                                <constraint firstItem="Amh-Wh-0Li" firstAttribute="top" secondItem="zGO-gZ-DHU" secondAttribute="bottom" constant="6" id="o7N-qM-K9Y"/>
+                                                <constraint firstItem="QXv-1B-Opc" firstAttribute="top" secondItem="2FW-Zs-CER" secondAttribute="top" constant="12" id="tk3-ek-9MI"/>
+                                                <constraint firstItem="v46-j2-HRS" firstAttribute="centerY" secondItem="Amh-Wh-0Li" secondAttribute="centerY" id="vaR-Xb-xtV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgIcon" destination="QXv-1B-Opc" id="hkU-cU-N8T"/>
+                                            <outlet property="lblDate" destination="Amh-Wh-0Li" id="hA8-fn-yDw"/>
+                                            <outlet property="lblFrom" destination="hKF-i7-o3e" id="8xv-GF-tgh"/>
+                                            <outlet property="lblMessage" destination="jj4-n9-EMv" id="P7p-KH-OhC"/>
+                                            <outlet property="lblTitle" destination="zGO-gZ-DHU" id="4TO-yi-msz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="I7F-QH-kaC" id="8Ek-Nc-7A9"/>
+                                    <outlet property="delegate" destination="I7F-QH-kaC" id="DXw-Z7-nqG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6td-mU-sLD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WMM-3m-5eU" firstAttribute="top" secondItem="6td-mU-sLD" secondAttribute="top" id="42m-0b-nlm"/>
+                            <constraint firstItem="WMM-3m-5eU" firstAttribute="leading" secondItem="6td-mU-sLD" secondAttribute="leading" id="Lhe-q5-ljk"/>
+                            <constraint firstItem="6td-mU-sLD" firstAttribute="bottom" secondItem="WMM-3m-5eU" secondAttribute="bottom" id="PiG-YC-PEi"/>
+                            <constraint firstItem="6td-mU-sLD" firstAttribute="trailing" secondItem="WMM-3m-5eU" secondAttribute="trailing" id="cUK-rQ-Z9t"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bza-99-ayf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2917" y="-35"/>
+        </scene>
     </scenes>
     <resources>
         <image name="avatar" width="84.5" height="84.5"/>
         <image name="back_icon" width="24" height="24"/>
+        <image name="communication_mail" width="24" height="24"/>
         <image name="mail_icon" width="31" height="31"/>
         <image name="pdf_icon" width="40" height="40"/>
         <image name="phone_icon" width="31" height="31"/>
