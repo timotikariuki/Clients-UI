@@ -94,6 +94,12 @@
 - (IBAction)onNotes:(id)sender {
     [self resetAllButtons];
     [self.btnNotes setSelected:YES];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.subVC = [storyboard instantiateViewControllerWithIdentifier:@"NotesViewController"];
+    [self addChildViewController:self.subVC];
+    [self.subVC.view setFrame:self.containerView.bounds];
+    [self.containerView addSubview:self.subVC.view];
 }
 
 - (IBAction)onDocuments:(id)sender {

@@ -19,6 +19,13 @@
 		F89D35232BF8AA2B00600330 /* DocumentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F89D35222BF8AA2B00600330 /* DocumentsViewController.m */; };
 		F89D35272BF8ABD400600330 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = F89D35262BF8ABD400600330 /* Document.m */; };
 		F89D352A2BF8AD5D00600330 /* DocumentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F89D35292BF8AD5D00600330 /* DocumentTableViewCell.m */; };
+		F8A9645C2BFD2B5D0077DAC1 /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A9645B2BFD2B5D0077DAC1 /* NotesViewController.m */; };
+		F8A9645F2BFD2C450077DAC1 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A9645E2BFD2C450077DAC1 /* Note.m */; };
+		F8A964622BFD2D010077DAC1 /* NotesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A964612BFD2D010077DAC1 /* NotesTableViewCell.m */; };
+		F8A964682BFD2E2E0077DAC1 /* avatar1.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A964642BFD2E2E0077DAC1 /* avatar1.png */; };
+		F8A964692BFD2E2E0077DAC1 /* avatar3.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A964652BFD2E2E0077DAC1 /* avatar3.png */; };
+		F8A9646A2BFD2E2E0077DAC1 /* avatar2.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A964662BFD2E2E0077DAC1 /* avatar2.png */; };
+		F8A9646B2BFD2E2E0077DAC1 /* avatar4.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A964672BFD2E2E0077DAC1 /* avatar4.png */; };
 		F8C44E9F2BF6F88C00A1648A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C44E9E2BF6F88C00A1648A /* AppDelegate.m */; };
 		F8C44EA22BF6F88C00A1648A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C44EA12BF6F88C00A1648A /* SceneDelegate.m */; };
 		F8C44EA52BF6F88C00A1648A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C44EA42BF6F88C00A1648A /* ViewController.m */; };
@@ -54,6 +61,16 @@
 		F89D35262BF8ABD400600330 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
 		F89D35282BF8AD5D00600330 /* DocumentTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentTableViewCell.h; sourceTree = "<group>"; };
 		F89D35292BF8AD5D00600330 /* DocumentTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentTableViewCell.m; sourceTree = "<group>"; };
+		F8A9645A2BFD2B5D0077DAC1 /* NotesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
+		F8A9645B2BFD2B5D0077DAC1 /* NotesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
+		F8A9645D2BFD2C450077DAC1 /* Note.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		F8A9645E2BFD2C450077DAC1 /* Note.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		F8A964602BFD2D010077DAC1 /* NotesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotesTableViewCell.h; sourceTree = "<group>"; };
+		F8A964612BFD2D010077DAC1 /* NotesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotesTableViewCell.m; sourceTree = "<group>"; };
+		F8A964642BFD2E2E0077DAC1 /* avatar1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar1.png; sourceTree = "<group>"; };
+		F8A964652BFD2E2E0077DAC1 /* avatar3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar3.png; sourceTree = "<group>"; };
+		F8A964662BFD2E2E0077DAC1 /* avatar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar2.png; sourceTree = "<group>"; };
+		F8A964672BFD2E2E0077DAC1 /* avatar4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar4.png; sourceTree = "<group>"; };
 		F8C44E9A2BF6F88B00A1648A /* Clients.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clients.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C44E9D2BF6F88B00A1648A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F8C44E9E2BF6F88C00A1648A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -92,6 +109,8 @@
 				F88AC59E2BFC3E9E00B24B09 /* EMRViewController.m */,
 				F88F88172BFCDFC4004D3149 /* CommunicationViewController.h */,
 				F88F88182BFCDFC5004D3149 /* CommunicationViewController.m */,
+				F8A9645A2BFD2B5D0077DAC1 /* NotesViewController.h */,
+				F8A9645B2BFD2B5D0077DAC1 /* NotesViewController.m */,
 			);
 			path = subviews;
 			sourceTree = "<group>";
@@ -107,6 +126,8 @@
 				F88AC59B2BFC369B00B24B09 /* EMRTableViewCell.m */,
 				F88F881A2BFCE0BD004D3149 /* CommunicationTableViewCell.h */,
 				F88F881B2BFCE0BD004D3149 /* CommunicationTableViewCell.m */,
+				F8A964602BFD2D010077DAC1 /* NotesTableViewCell.h */,
+				F8A964612BFD2D010077DAC1 /* NotesTableViewCell.m */,
 			);
 			path = tableCells;
 			sourceTree = "<group>";
@@ -120,8 +141,21 @@
 				F88AC5A12BFC3F5000B24B09 /* EMRItem.m */,
 				F88F881D2BFCE153004D3149 /* Communication.h */,
 				F88F881E2BFCE153004D3149 /* Communication.m */,
+				F8A9645D2BFD2C450077DAC1 /* Note.h */,
+				F8A9645E2BFD2C450077DAC1 /* Note.m */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		F8A964632BFD2DC40077DAC1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F8A964642BFD2E2E0077DAC1 /* avatar1.png */,
+				F8A964662BFD2E2E0077DAC1 /* avatar2.png */,
+				F8A964652BFD2E2E0077DAC1 /* avatar3.png */,
+				F8A964672BFD2E2E0077DAC1 /* avatar4.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		F8C44E912BF6F88A00A1648A = {
@@ -143,6 +177,7 @@
 		F8C44E9C2BF6F88B00A1648A /* Clients */ = {
 			isa = PBXGroup;
 			children = (
+				F8A964632BFD2DC40077DAC1 /* images */,
 				F89D35242BF8ABBD00600330 /* models */,
 				F89D351D2BF8A16900600330 /* tableCells */,
 				F89D35192BF89F4900600330 /* subviews */,
@@ -232,7 +267,11 @@
 			files = (
 				F8C44EAD2BF6F8D000A1648A /* LaunchScreen.storyboard in Resources */,
 				F8C44EAA2BF6F8D000A1648A /* Assets.xcassets in Resources */,
+				F8A964692BFD2E2E0077DAC1 /* avatar3.png in Resources */,
+				F8A964682BFD2E2E0077DAC1 /* avatar1.png in Resources */,
 				F8C44EA82BF6F88C00A1648A /* Main.storyboard in Resources */,
+				F8A9646B2BFD2E2E0077DAC1 /* avatar4.png in Resources */,
+				F8A9646A2BFD2E2E0077DAC1 /* avatar2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +287,12 @@
 				F88AC5A22BFC3F5000B24B09 /* EMRItem.m in Sources */,
 				F89D35272BF8ABD400600330 /* Document.m in Sources */,
 				F8C44EA52BF6F88C00A1648A /* ViewController.m in Sources */,
+				F8A9645F2BFD2C450077DAC1 /* Note.m in Sources */,
 				F88AC59C2BFC369C00B24B09 /* EMRTableViewCell.m in Sources */,
+				F8A964622BFD2D010077DAC1 /* NotesTableViewCell.m in Sources */,
 				F8CCEC512BF78A7B00CD35A7 /* CustomButton.m in Sources */,
 				F89D35202BF8A21600600330 /* DetailsTableViewCell.m in Sources */,
+				F8A9645C2BFD2B5D0077DAC1 /* NotesViewController.m in Sources */,
 				F8C44E9F2BF6F88C00A1648A /* AppDelegate.m in Sources */,
 				F89D351C2BF8A0F200600330 /* DetailsViewController.m in Sources */,
 				F89D35232BF8AA2B00600330 /* DocumentsViewController.m in Sources */,
