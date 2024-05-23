@@ -89,6 +89,12 @@
 - (IBAction)onPhotos:(id)sender {
     [self resetAllButtons];
     [self.btnPhotos setSelected:YES];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.subVC = [storyboard instantiateViewControllerWithIdentifier:@"PhotosViewController"];
+    [self addChildViewController:self.subVC];
+    [self.subVC.view setFrame:self.containerView.bounds];
+    [self.containerView addSubview:self.subVC.view];
 }
 
 - (IBAction)onNotes:(id)sender {

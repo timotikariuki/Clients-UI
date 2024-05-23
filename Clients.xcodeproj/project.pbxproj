@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F813435D2BFF6C940023A9E3 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F813435C2BFF6C940023A9E3 /* PhotosViewController.m */; };
+		F81343602BFF6E790023A9E3 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F813435F2BFF6E790023A9E3 /* PhotoCollectionViewCell.m */; };
+		F81343682BFF797A0023A9E3 /* photo7.png in Resources */ = {isa = PBXBuildFile; fileRef = F81343612BFF79750023A9E3 /* photo7.png */; };
+		F81343692BFF797A0023A9E3 /* photo3.png in Resources */ = {isa = PBXBuildFile; fileRef = F81343622BFF79770023A9E3 /* photo3.png */; };
+		F813436A2BFF797A0023A9E3 /* photo1.png in Resources */ = {isa = PBXBuildFile; fileRef = F81343632BFF79780023A9E3 /* photo1.png */; };
+		F813436B2BFF797A0023A9E3 /* photo2.png in Resources */ = {isa = PBXBuildFile; fileRef = F81343642BFF79790023A9E3 /* photo2.png */; };
+		F813436C2BFF797A0023A9E3 /* photo4.png in Resources */ = {isa = PBXBuildFile; fileRef = F81343652BFF79790023A9E3 /* photo4.png */; };
+		F813436D2BFF797A0023A9E3 /* photo5.png in Resources */ = {isa = PBXBuildFile; fileRef = F81343662BFF79790023A9E3 /* photo5.png */; };
+		F813436E2BFF797A0023A9E3 /* photo6.png in Resources */ = {isa = PBXBuildFile; fileRef = F81343672BFF797A0023A9E3 /* photo6.png */; };
 		F88AC59C2BFC369C00B24B09 /* EMRTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F88AC59B2BFC369B00B24B09 /* EMRTableViewCell.m */; };
 		F88AC59F2BFC3E9F00B24B09 /* EMRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88AC59E2BFC3E9E00B24B09 /* EMRViewController.m */; };
 		F88AC5A22BFC3F5000B24B09 /* EMRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F88AC5A12BFC3F5000B24B09 /* EMRItem.m */; };
@@ -37,6 +46,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F813435B2BFF6C940023A9E3 /* PhotosViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		F813435C2BFF6C940023A9E3 /* PhotosViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		F813435E2BFF6E790023A9E3 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		F813435F2BFF6E790023A9E3 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		F81343612BFF79750023A9E3 /* photo7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo7.png; sourceTree = "<group>"; };
+		F81343622BFF79770023A9E3 /* photo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo3.png; sourceTree = "<group>"; };
+		F81343632BFF79780023A9E3 /* photo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo1.png; sourceTree = "<group>"; };
+		F81343642BFF79790023A9E3 /* photo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo2.png; sourceTree = "<group>"; };
+		F81343652BFF79790023A9E3 /* photo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo4.png; sourceTree = "<group>"; };
+		F81343662BFF79790023A9E3 /* photo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo5.png; sourceTree = "<group>"; };
+		F81343672BFF797A0023A9E3 /* photo6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo6.png; sourceTree = "<group>"; };
 		F88AC59A2BFC369B00B24B09 /* EMRTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMRTableViewCell.h; sourceTree = "<group>"; };
 		F88AC59B2BFC369B00B24B09 /* EMRTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EMRTableViewCell.m; sourceTree = "<group>"; };
 		F88AC59D2BFC3E9E00B24B09 /* EMRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMRViewController.h; sourceTree = "<group>"; };
@@ -111,6 +131,8 @@
 				F88F88182BFCDFC5004D3149 /* CommunicationViewController.m */,
 				F8A9645A2BFD2B5D0077DAC1 /* NotesViewController.h */,
 				F8A9645B2BFD2B5D0077DAC1 /* NotesViewController.m */,
+				F813435B2BFF6C940023A9E3 /* PhotosViewController.h */,
+				F813435C2BFF6C940023A9E3 /* PhotosViewController.m */,
 			);
 			path = subviews;
 			sourceTree = "<group>";
@@ -128,6 +150,8 @@
 				F88F881B2BFCE0BD004D3149 /* CommunicationTableViewCell.m */,
 				F8A964602BFD2D010077DAC1 /* NotesTableViewCell.h */,
 				F8A964612BFD2D010077DAC1 /* NotesTableViewCell.m */,
+				F813435E2BFF6E790023A9E3 /* PhotoCollectionViewCell.h */,
+				F813435F2BFF6E790023A9E3 /* PhotoCollectionViewCell.m */,
 			);
 			path = tableCells;
 			sourceTree = "<group>";
@@ -150,6 +174,13 @@
 		F8A964632BFD2DC40077DAC1 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				F81343632BFF79780023A9E3 /* photo1.png */,
+				F81343642BFF79790023A9E3 /* photo2.png */,
+				F81343622BFF79770023A9E3 /* photo3.png */,
+				F81343652BFF79790023A9E3 /* photo4.png */,
+				F81343662BFF79790023A9E3 /* photo5.png */,
+				F81343672BFF797A0023A9E3 /* photo6.png */,
+				F81343612BFF79750023A9E3 /* photo7.png */,
 				F8A964642BFD2E2E0077DAC1 /* avatar1.png */,
 				F8A964662BFD2E2E0077DAC1 /* avatar2.png */,
 				F8A964652BFD2E2E0077DAC1 /* avatar3.png */,
@@ -265,13 +296,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F813436A2BFF797A0023A9E3 /* photo1.png in Resources */,
 				F8C44EAD2BF6F8D000A1648A /* LaunchScreen.storyboard in Resources */,
 				F8C44EAA2BF6F8D000A1648A /* Assets.xcassets in Resources */,
+				F813436C2BFF797A0023A9E3 /* photo4.png in Resources */,
+				F813436D2BFF797A0023A9E3 /* photo5.png in Resources */,
+				F813436E2BFF797A0023A9E3 /* photo6.png in Resources */,
 				F8A964692BFD2E2E0077DAC1 /* avatar3.png in Resources */,
 				F8A964682BFD2E2E0077DAC1 /* avatar1.png in Resources */,
 				F8C44EA82BF6F88C00A1648A /* Main.storyboard in Resources */,
 				F8A9646B2BFD2E2E0077DAC1 /* avatar4.png in Resources */,
+				F81343682BFF797A0023A9E3 /* photo7.png in Resources */,
+				F81343692BFF797A0023A9E3 /* photo3.png in Resources */,
 				F8A9646A2BFD2E2E0077DAC1 /* avatar2.png in Resources */,
+				F813436B2BFF797A0023A9E3 /* photo2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,10 +330,12 @@
 				F8A964622BFD2D010077DAC1 /* NotesTableViewCell.m in Sources */,
 				F8CCEC512BF78A7B00CD35A7 /* CustomButton.m in Sources */,
 				F89D35202BF8A21600600330 /* DetailsTableViewCell.m in Sources */,
+				F813435D2BFF6C940023A9E3 /* PhotosViewController.m in Sources */,
 				F8A9645C2BFD2B5D0077DAC1 /* NotesViewController.m in Sources */,
 				F8C44E9F2BF6F88C00A1648A /* AppDelegate.m in Sources */,
 				F89D351C2BF8A0F200600330 /* DetailsViewController.m in Sources */,
 				F89D35232BF8AA2B00600330 /* DocumentsViewController.m in Sources */,
+				F81343602BFF6E790023A9E3 /* PhotoCollectionViewCell.m in Sources */,
 				F88F88162BFCC51C004D3149 /* PaddingLabel.m in Sources */,
 				F88AC59F2BFC3E9F00B24B09 /* EMRViewController.m in Sources */,
 				F88F88192BFCDFC5004D3149 /* CommunicationViewController.m in Sources */,
