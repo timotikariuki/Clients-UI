@@ -18,9 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.imgAvatar.layer.cornerRadius = 85.0f;
-   
+       
     [self onDetails:self];
 }
 
@@ -40,7 +38,10 @@
     }
 }
 
-
+-(void)viewDidLayoutSubviews {
+    self.imgAvatar.layer.cornerRadius = self.imgAvatar.frame.size.width / 2.0f;
+    [self.imgAvatar layoutIfNeeded];
+}
 
 - (IBAction)onMail:(id)sender {
 }
