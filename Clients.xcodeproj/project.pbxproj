@@ -46,6 +46,10 @@
 		F8C44EAD2BF6F8D000A1648A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C44EAB2BF6F8D000A1648A /* LaunchScreen.storyboard */; };
 		F8C44EB02BF6F8D000A1648A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C44EAF2BF6F8D000A1648A /* main.m */; };
 		F8CCEC512BF78A7B00CD35A7 /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F8CCEC502BF78A7B00CD35A7 /* CustomButton.m */; };
+		F8D540892C1A06DA00F4847A /* Appointment.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D540882C1A06DA00F4847A /* Appointment.m */; };
+		F8D5408C2C1A082300F4847A /* AppointmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D5408B2C1A082300F4847A /* AppointmentTableViewCell.m */; };
+		F8D5408F2C1A084400F4847A /* AppointmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D5408E2C1A084300F4847A /* AppointmentViewController.m */; };
+		F8D540922C1A0A0C00F4847A /* AppointmentTableViewHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D540912C1A0A0C00F4847A /* AppointmentTableViewHeaderCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +118,14 @@
 		F8C44EAF2BF6F8D000A1648A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8CCEC4F2BF78A7B00CD35A7 /* CustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomButton.h; sourceTree = "<group>"; };
 		F8CCEC502BF78A7B00CD35A7 /* CustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
+		F8D540872C1A06DA00F4847A /* Appointment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Appointment.h; sourceTree = "<group>"; };
+		F8D540882C1A06DA00F4847A /* Appointment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Appointment.m; sourceTree = "<group>"; };
+		F8D5408A2C1A082300F4847A /* AppointmentTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppointmentTableViewCell.h; sourceTree = "<group>"; };
+		F8D5408B2C1A082300F4847A /* AppointmentTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppointmentTableViewCell.m; sourceTree = "<group>"; };
+		F8D5408D2C1A084300F4847A /* AppointmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppointmentViewController.h; sourceTree = "<group>"; };
+		F8D5408E2C1A084300F4847A /* AppointmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppointmentViewController.m; sourceTree = "<group>"; };
+		F8D540902C1A0A0C00F4847A /* AppointmentTableViewHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppointmentTableViewHeaderCell.h; sourceTree = "<group>"; };
+		F8D540912C1A0A0C00F4847A /* AppointmentTableViewHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppointmentTableViewHeaderCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +156,8 @@
 				F813435C2BFF6C940023A9E3 /* PhotosViewController.m */,
 				F885ABA82C19D2F3002E61DB /* FinancialsViewController.h */,
 				F885ABA92C19D2F3002E61DB /* FinancialsViewController.m */,
+				F8D5408D2C1A084300F4847A /* AppointmentViewController.h */,
+				F8D5408E2C1A084300F4847A /* AppointmentViewController.m */,
 			);
 			path = subviews;
 			sourceTree = "<group>";
@@ -165,6 +179,10 @@
 				F813435F2BFF6E790023A9E3 /* PhotoCollectionViewCell.m */,
 				F885ABAB2C19D372002E61DB /* FinancialsTableViewCell.h */,
 				F885ABAC2C19D372002E61DB /* FinancialsTableViewCell.m */,
+				F8D5408A2C1A082300F4847A /* AppointmentTableViewCell.h */,
+				F8D5408B2C1A082300F4847A /* AppointmentTableViewCell.m */,
+				F8D540902C1A0A0C00F4847A /* AppointmentTableViewHeaderCell.h */,
+				F8D540912C1A0A0C00F4847A /* AppointmentTableViewHeaderCell.m */,
 			);
 			path = tableCells;
 			sourceTree = "<group>";
@@ -182,6 +200,8 @@
 				F8A9645E2BFD2C450077DAC1 /* Note.m */,
 				F885ABAE2C19E2B2002E61DB /* FinancialItem.h */,
 				F885ABAF2C19E2B2002E61DB /* FinancialItem.m */,
+				F8D540872C1A06DA00F4847A /* Appointment.h */,
+				F8D540882C1A06DA00F4847A /* Appointment.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -338,6 +358,9 @@
 				F88F881C2BFCE0BD004D3149 /* CommunicationTableViewCell.m in Sources */,
 				F89D352A2BF8AD5D00600330 /* DocumentTableViewCell.m in Sources */,
 				F88AC5A22BFC3F5000B24B09 /* EMRItem.m in Sources */,
+				F8D540892C1A06DA00F4847A /* Appointment.m in Sources */,
+				F8D5408C2C1A082300F4847A /* AppointmentTableViewCell.m in Sources */,
+				F8D540922C1A0A0C00F4847A /* AppointmentTableViewHeaderCell.m in Sources */,
 				F885ABAA2C19D2F3002E61DB /* FinancialsViewController.m in Sources */,
 				F89D35272BF8ABD400600330 /* Document.m in Sources */,
 				F8C44EA52BF6F88C00A1648A /* ViewController.m in Sources */,
@@ -349,6 +372,7 @@
 				F813435D2BFF6C940023A9E3 /* PhotosViewController.m in Sources */,
 				F8A9645C2BFD2B5D0077DAC1 /* NotesViewController.m in Sources */,
 				F8C44E9F2BF6F88C00A1648A /* AppDelegate.m in Sources */,
+				F8D5408F2C1A084400F4847A /* AppointmentViewController.m in Sources */,
 				F89D351C2BF8A0F200600330 /* DetailsViewController.m in Sources */,
 				F885ABAD2C19D372002E61DB /* FinancialsTableViewCell.m in Sources */,
 				F89D35232BF8AA2B00600330 /* DocumentsViewController.m in Sources */,

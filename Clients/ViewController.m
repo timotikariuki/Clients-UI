@@ -69,6 +69,13 @@
 - (IBAction)onAppointment:(id)sender{
     [self resetAllButtons];
     [self.btnAppointments setSelected:YES];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.subVC = [storyboard instantiateViewControllerWithIdentifier:@"AppointmentViewController"];
+    [self addChildViewController:self.subVC];
+    
+    [self.subVC.view setFrame:self.containerView.bounds];
+    [self.containerView addSubview:self.subVC.view];
 }
 
 - (IBAction)onFinancials:(id)sender {
