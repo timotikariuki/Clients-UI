@@ -16,7 +16,7 @@
     UIColor* borderColor = [UIColor colorWithRed:146/255.0f green:146/255.0f blue:163/255.0f alpha:1.0f];
     self.lblTitle.layer.borderColor = borderColor.CGColor;
     self.lblTitle.layer.borderWidth = 1.0f;
-    self.lblTitle.layer.cornerRadius = 20.0f;
+    self.lblTitle.layer.cornerRadius = 12.0f;
     
 }
 
