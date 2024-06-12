@@ -47,8 +47,34 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 120.0f;
+    NSInteger row = [indexPath row];
+    Communication *item = [self.arrCommunications objectAtIndex:row];
+    
+    UIFont *font = [UIFont systemFontOfSize:12.0f];
+    CGFloat labelWidth = [UIScreen mainScreen].bounds.size.width -  90.0f;
+    CGFloat height = [self heightForString:item.message withFont:font andWidth:labelWidth];
+
+    return height + 90.0f;
 }
 
+- (CGFloat)heightForString:(NSString *)string withFont:(UIFont *)font andWidth:(CGFloat)width {
+    // Define the maximum size constraint (width and a very large height)
+    CGSize maxSize = CGSizeMake(width, CGFLOAT_MAX);
+    
+    // Define the string drawing options
+    NSStringDrawingOptions options = NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading;
+    
+    // Define the attributes dictionary with the font
+    NSDictionary *attributes = @{NSFontAttributeName: font};
+    
+    // Calculate the bounding rect for the string
+    CGRect boundingRect = [string boundingRectWithSize:maxSize
+                                               options:options
+                                            attributes:attributes
+                                               context:nil];
+    
+    // Return the height of the bounding rect, rounded up to the nearest whole number
+    return ceil(boundingRect.size.height);
+}
 
 @end
