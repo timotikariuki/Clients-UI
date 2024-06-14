@@ -39,9 +39,12 @@
 }
 
 -(void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    [self.view layoutIfNeeded];
     self.imgAvatar.layer.cornerRadius = self.imgAvatar.frame.size.width / 2.0f;
-    [self.imgAvatar layoutIfNeeded];
+    
 }
+
 
 - (IBAction)onMail:(id)sender {
 }
