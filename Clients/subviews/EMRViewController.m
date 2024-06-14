@@ -28,6 +28,8 @@
     [self.arrEMRs addObject:[[EMRItem alloc] initWithTitle:@"Botox Treatment Form" date:@"20 Aug 2021, 2:00 PM" name:@"Erika Chapman" type:Treatment]];
     [self.arrEMRs addObject:[[EMRItem alloc] initWithTitle:@"Medical History Form" date:@"18 Aug 2021, 2:00 PM" name:@"Jane Rache" type:Questionnaire]];
     [self.arrEMRs addObject:[[EMRItem alloc] initWithTitle:@"Botox Consent" date:@"21 Aug 2021, 2:00 PM" name:@"Bruno Ballardin" type:Consent]];
+    
+    [self onLatestVersion:self];
 }
 
 
@@ -55,4 +57,18 @@
 
 
 
+- (IBAction)onFullHistory:(id)sender {
+    [self resetAllButtons];
+    [self.btnFullHistory setSelected:YES];
+}
+
+- (IBAction)onLatestVersion:(id)sender {
+    [self resetAllButtons];
+    [self.btnLatestVersion setSelected:YES];
+}
+
+- (void)resetAllButtons {
+    [self.btnLatestVersion setSelected:NO];
+    [self.btnFullHistory setSelected:NO];
+}
 @end

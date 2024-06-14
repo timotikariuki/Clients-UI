@@ -10,6 +10,7 @@
 #import "AppointmentTableViewCell.h"
 #import "AppointmentTableViewHeaderCell.h"
 
+
 @interface AppointmentViewController ()
 
 @end
@@ -33,6 +34,7 @@
     [self.arrAppointments addObject:upcomingArray];
     [self.arrAppointments addObject:pastArray];
     
+    [self onAllButton:self];
 }
 
 /*
@@ -106,5 +108,32 @@
     return 60.0;
 }
 
+
+- (IBAction)onCanceledButton:(id)sender {
+    [self resetAllButtons];
+    [self.btnCanceled setSelected:YES];
+}
+
+- (IBAction)onNoShowButton:(id)sender {
+    [self resetAllButtons];
+    [self.btnNoShow setSelected:YES];
+}
+
+- (IBAction)onCompletedButton:(id)sender {
+    [self resetAllButtons];
+    [self.btnCompleted setSelected:YES];
+}
+
+- (IBAction)onAllButton:(id)sender {
+    [self resetAllButtons];
+    [self.btnAll setSelected:YES];
+}
+
+- (void)resetAllButtons {
+    [self.btnAll setSelected:NO];
+    [self.btnCompleted setSelected:NO];
+    [self.btnNoShow setSelected:NO];
+    [self.btnCanceled setSelected:NO];
+}
 
 @end
